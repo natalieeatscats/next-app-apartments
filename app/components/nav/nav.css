@@ -1,0 +1,50 @@
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.nav-list--logo {
+  display: block;
+  width: 82px;
+  height: 92px;
+  padding: 0;
+  background-image: url("../../img/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav-list--right {
+  display: flex;
+  gap: 5rem;
+  flex-direction: row-reverse;
+}
+
+.nav-list--phone {
+  padding-left: 2rem;
+  text-decoration: none;
+  color: #475658;
+  transition: color 0.3s ease;
+}
+
+.nav-list--phone:hover {
+  color: #03073c;
+}
+
+.nav-list--phone::before {
+  content: "";
+  position: absolute;
+  translate: -2rem;
+  background-image: url("../../img/phone.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.nav-list--links-list {
+  display: flex;
+  gap: 4rem;
+}

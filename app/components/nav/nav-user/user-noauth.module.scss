@@ -1,0 +1,20 @@
+@import '../../../variables.scss';
+
+.login {
+  text-decoration: none;
+  color: $dark;
+  border: 1px solid $dark;
+  border-radius: 0.5rem;
+  padding: 12px 55px 15px 55px;
+  transition: all 0.3s ease;
+}
+
+.login:hover {
+  color: $background-accent;
+  background-color: $dark;
+}
+
+.login:active {
+  color: $background-accent;
+  background-color: $dark-active;
+}

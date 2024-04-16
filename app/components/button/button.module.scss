@@ -1,0 +1,35 @@
+@import '../../variables.scss';
+
+.button {
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 400px;
+}
+
+.buttonPrimary {
+  background-color: $primary;
+  color: $background;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.buttonWhite {
+  background-color: $background;
+  color: $secondary;
+  box-shadow: 2px 2px 4px #a1303c;
+  transition: all 0.3s ease;
+}
+
+.buttonWhite:hover {
+  color: $dark;
+  background-color: #fafeff;
+  box-shadow: 2px 2px 8px #a1303c;
+}
+
+.buttonWhite:active {
+  color: $secondary;
+  background-color: #f6fdff;
+}

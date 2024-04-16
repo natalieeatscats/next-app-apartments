@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+.phone {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: $secondary;
+  transition: color 0.3s ease;
+}
+
+.phone:hover {
+  color: $dark-active;
+}
+
+.phone::before {
+  content: '';
+  position: absolute;
+  translate: -1.6rem 0.2rem;
+  background-image: url('../../img/phone.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1rem;
+  height: 1rem;
+}

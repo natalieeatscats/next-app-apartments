@@ -1,0 +1,16 @@
+@import '../../../variables.scss';
+
+.item {
+  margin: 0;
+  padding: 0;
+}
+
+.itemLink {
+  text-decoration: none;
+  color: $secondary;
+  transition: color 0.3s ease;
+}
+
+.itemLink:hover {
+  color: $dark-active;
+}

@@ -1,0 +1,18 @@
+.login {
+  text-decoration: none;
+  color: #121761;
+  border: 1px solid #121761;
+  border-radius: 0.5rem;
+  padding: 12px 55px 15px 55px;
+  transition: all 0.3s ease;
+}
+
+.login:hover {
+  color: #fafeff;
+  background-color: #121761;
+}
+
+.login:active {
+  color: #fafeff;
+  background-color: #03073c;
+}

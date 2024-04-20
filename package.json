@@ -14,11 +14,13 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8.52.0",
     "eslint-config-next": "14.2.1",
+    "faker": "^6.6.6",
     "next-postcss": "^2.0.0",
     "postcss": "^8.4.38",
     "prettier": "^3.1.0",

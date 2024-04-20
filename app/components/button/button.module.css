@@ -3,31 +3,41 @@
   padding: 1rem 2.5rem;
   border-radius: 0.5rem;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   width: 400px;
 }
 
 .buttonPrimary {
   background-color: #d44b4b;
-  color: #f7f7f7;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
   transition: all 0.3s ease;
 }
 
+.buttonPrimary:hover {
+  background-color: #f46767;
+  box-shadow: inset #d74343 0 0 1rem;
+}
+
+.buttonPrimary:active {
+  background-color: #d74343;
+  transition: all 0.1s ease;
+}
+
 .buttonWhite {
-  background-color: #f7f7f7;
-  color: #475658;
-  box-shadow: 2px 2px 4px #a1303c;
+  background-color: #ffffff;
+  color: #74768c;
+  box-shadow: 0 0 1rem #a1303c;
   transition: all 0.3s ease;
 }
 
 .buttonWhite:hover {
   color: #121761;
-  background-color: #fafeff;
-  box-shadow: 2px 2px 8px #a1303c;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 8px #a1303c, inset #f2f9f8 0 0 1rem;
 }
 
 .buttonWhite:active {
-  color: #475658;
-  background-color: #f6fdff;
+  color: #74768c;
+  background-color: #f2f9f8;
+  transition: all 0.1s ease;
 }

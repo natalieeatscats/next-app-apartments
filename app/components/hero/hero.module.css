@@ -1,10 +1,13 @@
 .hero {
   background-color: #d44b4b;
-  color: #f7f7f7;
+  color: #ffffff;
   width: 100%;
 }
 .hero h1 {
   margin: 0;
+}
+.hero p {
+  color: #ffffff;
 }
 
 .container {
@@ -26,7 +29,7 @@
   right: 0;
   top: 10%;
   position: absolute;
-  background-image: url("../../img/city.png");
+  background-image: url("/img/city.png");
   background-repeat: no-repeat;
   background-size: contain;
 }

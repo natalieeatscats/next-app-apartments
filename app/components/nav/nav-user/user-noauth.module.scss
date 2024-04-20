@@ -1,3 +1,4 @@
+@use 'sass:color';
 @import '../../../variables.scss';
 
 .login {
@@ -9,9 +10,18 @@
   transition: all 0.3s ease;
 }
 
+$glow: color.adjust(
+  $background-accent,
+  $alpha: - 0.7,
+  $saturation: +25%,
+  $lightness: -60%
+);
+
 .login:hover {
   color: $background-accent;
   background-color: $dark;
+  border: 1px solid $glow;
+  box-shadow: inset $glow 0 0 1rem;
 }
 
 .login:active {

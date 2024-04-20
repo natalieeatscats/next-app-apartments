@@ -5,31 +5,43 @@
   padding: 1rem 2.5rem;
   border-radius: 0.5rem;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   width: 400px;
 }
 
 .buttonPrimary {
   background-color: $primary;
   color: $background;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease;
+}
+
+.buttonPrimary:hover {
+  background-color: $primary-hover;
+  box-shadow: inset $primary-active 0 0 1rem;
+}
+
+.buttonPrimary:active {
+  background-color: $primary-active;
+  transition: all 0.1s ease;
 }
 
 .buttonWhite {
   background-color: $background;
   color: $secondary;
-  box-shadow: 2px 2px 4px #a1303c;
+  box-shadow: 0 0 1rem #a1303c;
   transition: all 0.3s ease;
 }
 
 .buttonWhite:hover {
   color: $dark;
-  background-color: #fafeff;
-  box-shadow: 2px 2px 8px #a1303c;
+  background-color: $background;
+  box-shadow:
+    2px 2px 8px #a1303c,
+    inset $background-accent 0 0 1rem;
 }
 
 .buttonWhite:active {
   color: $secondary;
-  background-color: #f6fdff;
+  background-color: $background-accent;
+  transition: all 0.1s ease;
 }

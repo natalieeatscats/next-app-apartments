@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+@import '../../util.scss';
+
+.footer {
+  width: 100%;
+  background-color: $secondary;
+  padding: 1rem 0;
+  margin-top: 9rem;
+}
+
+.container {
+  @include container;
+}

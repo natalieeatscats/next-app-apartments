@@ -1,0 +1,26 @@
+@import '../../variables.scss';
+@import '../../util.scss';
+
+.container {
+  @include container;
+  margin-top: 9rem;
+  h2 {
+    text-align: center;
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.cta {
+  text-align: center;
+  line-height: 2rem;
+  margin-top: 2rem;
+  span {
+    color: $primary;
+  }
+}

@@ -1,0 +1,52 @@
+@use 'sass:color';
+@import '../../../variables.scss';
+
+.container {
+  background-color: $background;
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: color.adjust(
+      $background-accent,
+      $lightness: -5%,
+      $saturation: +25%
+    )
+    0 0 0.5rem;
+  overflow: hidden;
+  margin: 0 9rem;
+}
+
+.illustration {
+  width: 14.5rem;
+  background-color: $primary;
+  div {
+    width: 50rem;
+    height: 100%;
+    background-image: url('/img/city.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: scale(-1, 1) translate(15%, 25%);
+  }
+  overflow: hidden;
+}
+
+.content {
+  padding: 3.5rem;
+}
+
+.timer {
+  color: $secondary;
+  span {
+    color: $primary;
+  }
+}
+
+.desc {
+  margin-top: 3rem;
+  color: $secondary;
+}
+
+.list {
+  color: $secondary;
+  max-width: 70%;
+  font-size: 0.8rem;
+}

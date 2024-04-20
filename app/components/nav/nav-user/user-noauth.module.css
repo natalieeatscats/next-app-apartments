@@ -8,11 +8,13 @@
 }
 
 .login:hover {
-  color: #fafeff;
+  color: #f2f9f8;
   background-color: #121761;
+  border: 1px solid rgba(35, 150, 133, 0.3);
+  box-shadow: inset rgba(35, 150, 133, 0.3) 0 0 1rem;
 }
 
 .login:active {
-  color: #fafeff;
+  color: #f2f9f8;
   background-color: #03073c;
 }

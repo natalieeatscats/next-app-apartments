@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  background-color: #f2f9f8;
+  border-radius: 1rem;
+  box-shadow: inset #dbf7f3 0 0 0.5rem;
+  overflow: hidden;
+  margin: 5rem 9rem 3rem 9rem;
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container h4 {
+  font-weight: 400;
+  color: #d44b4b;
+  margin: 0;
+  display: inline;
+}
+.container h3 {
+  font-weight: 500;
+  color: #121761;
+  margin-top: 0.5rem;
+}
+
+.date {
+  color: #74768c;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}

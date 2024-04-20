@@ -1,0 +1,9 @@
+@import './variables.scss';
+@import './util.scss';
+
+.illustrationsContainer {
+  @include container;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6rem;
+}

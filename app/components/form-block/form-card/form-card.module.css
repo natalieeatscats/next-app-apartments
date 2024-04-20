@@ -1,0 +1,44 @@
+.container {
+  background-color: #ffffff;
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: #dbf7f3 0 0 0.5rem;
+  overflow: hidden;
+  margin: 0 9rem;
+}
+
+.illustration {
+  width: 14.5rem;
+  background-color: #d44b4b;
+  overflow: hidden;
+}
+.illustration div {
+  width: 50rem;
+  height: 100%;
+  background-image: url("/img/city.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: scale(-1, 1) translate(15%, 25%);
+}
+
+.content {
+  padding: 3.5rem;
+}
+
+.timer {
+  color: #74768c;
+}
+.timer span {
+  color: #d44b4b;
+}
+
+.desc {
+  margin-top: 3rem;
+  color: #74768c;
+}
+
+.list {
+  color: #74768c;
+  max-width: 70%;
+  font-size: 0.8rem;
+}

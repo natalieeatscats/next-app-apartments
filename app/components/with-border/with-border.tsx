@@ -20,8 +20,8 @@ const getBorderColor = (color: string) => {
 const WithBorder = ({ children, color }: Props) => {
   return (
     <span className={styles.container}>
-      <span className={`${styles.border} ${getBorderColor(color)}`}></span>
       {children}
+      <span className={`${styles.border} ${getBorderColor(color)}`}></span>
     </span>
   );
 };

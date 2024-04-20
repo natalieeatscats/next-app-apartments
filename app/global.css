@@ -6,7 +6,7 @@ html {
 body {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   margin: 0;
 }
 
@@ -21,6 +21,7 @@ a {
 
 li {
   list-style: none;
+  line-height: 1.3rem;
 }
 
 ul {
@@ -31,4 +32,29 @@ ul {
 button {
   border: none;
   outline: none;
+  font-size: 2.15rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  color: #74768c;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.7rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 3rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: 500;
 }

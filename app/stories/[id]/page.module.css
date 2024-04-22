@@ -1,0 +1,40 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  max-width: 1000px;
+  margin-top: 5rem;
+}
+.container p {
+  font-size: 1rem;
+  text-align: justify;
+  letter-spacing: 0.05rem;
+}
+
+.info {
+  margin-bottom: 3rem;
+}
+.info h2 {
+  display: inline;
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 800;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+.info h3 {
+  display: inline;
+  vertical-align: baseline;
+  line-height: 5rem;
+  white-space: nowrap;
+  color: #d44b4b;
+  margin-bottom: auto;
+}
+.info h3 span {
+  margin-left: 0;
+}
+.info h4 {
+  display: inline;
+  margin-bottom: 5rem;
+  color: #74768c;
+}

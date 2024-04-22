@@ -1,0 +1,42 @@
+@import '../../variables.scss';
+@import '../../util.scss';
+
+.container {
+  @include container;
+  max-width: 1000px;
+  margin-top: 5rem;
+  p {
+    font-size: 1rem;
+    text-align: justify;
+    letter-spacing: 0.05rem;
+  }
+}
+
+.info {
+  margin-bottom: 3rem;
+  h2 {
+    display: inline;
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+  }
+  h3 {
+    display: inline;
+    vertical-align: baseline;
+    line-height: 5rem;
+    white-space: nowrap;
+    color: $primary;
+    margin-bottom: auto;
+    span {
+      margin-left: 0;
+    }
+  }
+  h4 {
+    display: inline;
+    margin-bottom: 5rem;
+    color: $secondary;
+  }
+}

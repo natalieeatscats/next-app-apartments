@@ -1,0 +1,19 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container h2 {
+  text-align: left;
+  width: 100%;
+  font-size: 5rem;
+  line-height: 6rem;
+}
+.container h2 span {
+  color: #d44b4b;
+  white-space: nowrap;
+  margin-left: 0;
+}

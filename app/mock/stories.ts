@@ -7,7 +7,10 @@ export const makeStories = (num: number) => {
     const story: StoryData = {
       id: i,
       title: faker.lorem.sentence({ min: 3, max: 5 }),
-      text: faker.lorem.paragraphs({ min: 5, max: 10 }, '\n'),
+      text: new Array(faker.number.int({ min: 5, max: 20 }))
+        .fill('0')
+        .map((para) => (para = faker.lorem.paragraph({ min: 5, max: 20 })))
+        .join('\n'),
       author: faker.person.fullName(),
       date: faker.date.recent({ days: 30 }).toLocaleDateString('ru-RU'),
     };

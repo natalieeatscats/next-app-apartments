@@ -9,7 +9,9 @@
     color.adjust($dark, $alpha: - 0.9, $saturation: +25%) 0 0 1rem,
     inset $background-accent 0 0 1rem;
   overflow: hidden;
-  margin: 5rem 9rem 2rem 9rem;
+  flex-basis: 30%;
+  flex-grow: 1;
+  margin: 1rem 1rem;
   padding: 3.5rem;
   display: flex;
   flex-direction: column;
@@ -25,10 +27,26 @@
     color: $dark;
     margin-top: 0.5rem;
   }
+  a {
+    margin-top: auto;
+  }
+}
+
+.big {
+  width: 70%;
+  margin: 5rem auto 1rem auto;
+  .paragraphs {
+    max-height: 100%;
+  }
 }
 
 .date {
   color: $secondary;
   font-size: 0.8rem;
   margin-right: 0.5rem;
+}
+
+.paragraphs {
+  max-height: 10rem;
+  overflow: hidden;
 }

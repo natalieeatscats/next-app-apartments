@@ -14,7 +14,7 @@ const Featured = () => {
       <Title size={2}>
         Истории<WithBorder color="primary">наших пользователей</WithBorder>
       </Title>
-      <StoryCard content={STORIES[0]} parasToDisplay={4}></StoryCard>
+      <StoryCard content={STORIES[0]} parasToDisplay={4} big></StoryCard>
       <ul className={styles.list}>
         {STORIES.slice(1, 5).map((story) => (
           <li>

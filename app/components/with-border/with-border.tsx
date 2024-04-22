@@ -4,6 +4,7 @@ import styles from "./with-border.module.css";
 type Props = {
   children: React.ReactNode;
   color: string;
+  interactible?: boolean;
 };
 
 const getBorderColor = (color: string) => {
@@ -17,11 +18,12 @@ const getBorderColor = (color: string) => {
   }
 };
 
-const WithBorder = ({ children, color }: Props) => {
+const WithBorder = ({ children, color, interactible }: Props) => {
   return (
-    <span className={styles.container}>
-      {children}
-      <span className={`${styles.border} ${getBorderColor(color)}`}></span>
+    <span className={`${interactible && styles.interactible}`}>
+      <span className={`${styles.border} ${getBorderColor(color)}`}>
+        {children}
+      </span>
     </span>
   );
 };

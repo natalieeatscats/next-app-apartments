@@ -45,18 +45,38 @@ p {
   color: $secondary;
 }
 
+.h {
+  font-weight: 700;
+  color: $dark;
+}
+
 h1 {
+  @extend .h;
   font-size: 2.25rem;
   line-height: 2.7rem;
 }
 
 h2 {
+  @extend .h;
   font-size: 2.25rem;
   line-height: 3rem;
 }
 
 h3 {
+  @extend .h;
   font-size: 1.75rem;
   line-height: 2.25rem;
   font-weight: 500;
+}
+
+h4 {
+  @extend .h;
+}
+
+h5 {
+  @extend .h;
+}
+
+h6 {
+  @extend .h;
 }

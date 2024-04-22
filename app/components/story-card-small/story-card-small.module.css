@@ -1,10 +1,10 @@
 .container {
   position: relative;
-  background-color: #f2f9f8;
+  background-color: rgba(242, 249, 248, 0.3);
   border-radius: 1rem;
-  box-shadow: inset #dbf7f3 0 0 0.5rem;
+  box-shadow: rgba(4, 10, 111, 0.1) 0 0 1rem, inset #f2f9f8 0 0 1rem;
   overflow: hidden;
-  margin: 5rem 9rem 3rem 9rem;
+  margin: 5rem 9rem 2rem 9rem;
   padding: 3.5rem;
   display: flex;
   flex-direction: column;
@@ -29,13 +29,15 @@
 }
 
 .container {
+  background-color: rgba(242, 249, 248, 0.3);
   margin: 0;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 10rem;
-  height: 10rem;
+  height: 7rem;
+  transition: all 0.3s ease;
 }
 .container h6 {
   font-weight: 400;
@@ -47,15 +49,31 @@
   font-weight: 500;
   color: #121761;
   margin-top: 0.5rem;
+  margin-bottom: 0;
 }
-.container button {
-  margin-top: auto;
-  width: 100%;
-  font-size: 0.8rem;
+
+.container:hover {
+  background-color: #f2f9f8;
 }
 
 .date {
   color: #74768c;
   font-size: 0.5rem;
   margin-right: 0.3rem;
+}
+
+.link {
+  color: #d44b4b;
+  margin-top: auto;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+.link span {
+  padding: 0.5rem 1rem;
+}
+
+.container:hover .link {
+  color: #f46767;
 }

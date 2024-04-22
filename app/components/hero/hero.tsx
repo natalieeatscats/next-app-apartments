@@ -11,7 +11,8 @@ const Hero = () => {
         <div className={styles.content}>
           <p>Запутались в сложных терминах и документах?</p>
           <Title size={1}>
-            Узнайте, какие<WithBorder color="white">документы</WithBorder>
+            Узнайте, какие
+            <WithBorder color="white">документы</WithBorder>
             <br />
             подготовить и что учесть
             <br />

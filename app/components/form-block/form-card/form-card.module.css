@@ -36,6 +36,9 @@
   margin-top: 3rem;
   color: #74768c;
 }
+.desc span {
+  color: #d44b4b;
+}
 
 .list {
   color: #74768c;

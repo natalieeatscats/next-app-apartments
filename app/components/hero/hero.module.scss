@@ -3,9 +3,9 @@
 
 .hero {
   background-color: $primary;
-  color: $background;
   width: 100%;
   h1 {
+    color: $background;
     margin: 0;
   }
   p {

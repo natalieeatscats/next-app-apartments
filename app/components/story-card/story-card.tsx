@@ -4,6 +4,7 @@ import Title from "../title/title";
 import styles from "./story-card.module.css";
 import WithBorder from "../with-border/with-border";
 import Button from "../button/button";
+import Link from "next/link";
 
 type Props = {
   content: StoryData;
@@ -18,7 +19,11 @@ const StoryCard = ({ content, parasToDisplay }: Props) => {
       <div>
         <Title size={4}>
           <span className={styles.date}>{date}</span>
-          <WithBorder color="primary">{author}</WithBorder>
+          <Link href={`/user/${author}`}>
+            <WithBorder color="primary" interactible>
+              {author}
+            </WithBorder>
+          </Link>
         </Title>
         <Title size={3}>{title}</Title>
         {paragraphs.slice(0, parasToDisplay).map((paragraph, index) => (

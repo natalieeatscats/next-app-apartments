@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./form-card.module.css";
 import Title from "../../title/title";
 import Button from "../../button/button";
+import WithBorder from "../../with-border/with-border";
 
 const FormCard = () => {
   return (
@@ -20,9 +21,10 @@ const FormCard = () => {
         </Title>
         <Button color="primary">Начать</Button>
         <p className={styles.desc}>
-          После завершения опроса вы получите
+          После завершения опроса вы
           <br />
-          PDF файл, содержащий:
+          получите
+          <WithBorder color="primary">PDF файл,</WithBorder>содержащий:
         </p>
         <ul className={styles.list}>
           <li>1. Список документов, необходимых в вашем конкретном случае.</li>

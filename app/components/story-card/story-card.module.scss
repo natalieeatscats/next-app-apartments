@@ -3,13 +3,13 @@
 
 .container {
   position: relative;
-  background-color: $background-accent;
+  background-color: color.adjust($background-accent, $alpha: - 0.7);
   border-radius: 1rem;
-  box-shadow: inset
-    color.adjust($background-accent, $lightness: -5%, $saturation: +25%) 0 0
-    0.5rem;
+  box-shadow:
+    color.adjust($dark, $alpha: - 0.9, $saturation: +25%) 0 0 1rem,
+    inset $background-accent 0 0 1rem;
   overflow: hidden;
-  margin: 5rem 9rem 3rem 9rem;
+  margin: 5rem 9rem 2rem 9rem;
   padding: 3.5rem;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,6 @@
     color: $dark;
     margin-top: 0.5rem;
   }
-
 }
 
 .date {

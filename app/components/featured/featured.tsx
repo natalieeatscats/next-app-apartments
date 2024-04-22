@@ -16,7 +16,7 @@ const Featured = () => {
       </Title>
       <StoryCard content={STORIES[0]} parasToDisplay={4}></StoryCard>
       <ul className={styles.list}>
-        {STORIES.slice(1, 4).map((story) => (
+        {STORIES.slice(1, 5).map((story) => (
           <li>
             <StoryCardSmall
               key={story.id}
@@ -29,12 +29,16 @@ const Featured = () => {
       <p className={styles.cta}>
         Заинтересовались? Прочитайте
         <Link href={"/stories"}>
-          <WithBorder color="primary">другие истории,</WithBorder>
+          <WithBorder color="primary" interactible>
+            другие истории,
+          </WithBorder>
         </Link>
         a лучше
         <br />
         <Link href={"/login"}>
-          <WithBorder color="primary">войдите или зарегистрируйтесь</WithBorder>
+          <WithBorder color="primary" interactible>
+            войдите или зарегистрируйтесь
+          </WithBorder>
         </Link>
         и поделитесь своей!
       </p>

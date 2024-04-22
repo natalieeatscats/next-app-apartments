@@ -1,27 +1,55 @@
 @import '../../variables.scss';
 
-.container {
-  position: relative;
-  margin: 0 0.5em;
-  padding: calc(min(0.4em, 1%));
-  // padding: 0.4em;
+.interactible:hover {
+  cursor: pointer;
+  .borderPrimary {
+    color: $background-accent;
+  }
+  .borderWhite {
+    color: $primary-hover;
+  }
+  .borderPrimary::before {
+    background-color: $primary-hover;
+    border-color: $primary-hover;
+  }
+  .borderWhite::before {
+    background-color: $background;
+  }
 }
 
 .border {
+  position: relative;
+  z-index: 1;
+  margin: 0 0.5em;
+  padding: calc(min(0.4em, 1%));
+}
+
+.border::before {
   position: absolute;
+  content: '';
   left: -1%;
   top: 0.25em;
   width: 100%;
   height: 80%;
-  box-sizing: content-box;
   border-radius: 0.5em;
   translate: 1% 0;
+  z-index: -1;
 }
 
 .borderPrimary {
-  border: 1px solid $primary;
+  transition: all 0.3s ease;
 }
 
 .borderWhite {
+  transition: all 0.3s ease;
+}
+
+.borderPrimary::before {
+  border: 1px solid $primary;
+  transition: all 0.3s ease;
+}
+
+.borderWhite::before {
   border: 1px solid $background;
+  transition: all 0.3s ease;
 }

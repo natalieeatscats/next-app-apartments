@@ -43,6 +43,11 @@ p {
   color: #74768c;
 }
 
+.h, h6, h5, h4, h3, h2, h1 {
+  font-weight: 700;
+  color: #121761;
+}
+
 h1 {
   font-size: 2.25rem;
   line-height: 2.7rem;

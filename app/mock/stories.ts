@@ -13,7 +13,6 @@ export const makeStories = (num: number) => {
     };
     stories.push(story);
   }
-  console.log(stories);
   return stories;
 };
 

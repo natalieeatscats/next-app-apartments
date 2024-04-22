@@ -6,8 +6,74 @@
   background-color: $secondary;
   padding: 1rem 0;
   margin-top: 9rem;
+  font-size: 0.8rem;
+  color: $background-accent;
+  li {
+    margin-bottom: 1rem;
+  }
 }
 
 .container {
   @include container;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  color: $background-accent;
+}
+
+.contacts {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1.1rem;
+  overflow: visible;
+  margin-bottom: auto;
+  margin-top: 2rem;
+}
+
+.phone {
+  position: relative;
+}
+
+.hours {
+  li:nth-child(1) {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+  }
+  position: relative;
+  margin-bottom: auto;
+  margin-top: 2rem;
+}
+
+.icon {
+  content: '';
+  position: absolute;
+  left: -1.4rem;
+  top: 0.2rem;
+  width: 1rem;
+  height: 1rem;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background-color: $background-accent;
+}
+
+.phone::before {
+  @extend .icon;
+  mask-image: url('/img/phone.svg');
+}
+
+.address {
+  position: relative;
+}
+
+.address::before {
+  @extend .icon;
+  mask-image: url('/img/pin.svg');
+}
+
+.hours::before {
+  @extend .icon;
+  mask-image: url('/img/clock.svg');
+  top: 0;
 }

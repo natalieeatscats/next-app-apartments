@@ -1,9 +1,9 @@
 .hero {
   background-color: #d44b4b;
-  color: #ffffff;
   width: 100%;
 }
 .hero h1 {
+  color: #ffffff;
   margin: 0;
 }
 .hero p {
